@@ -42,11 +42,6 @@ console.log(typeof name);
 console.log(typeof age);
 console.log(typeof isStudent);
 console.log(typeof somethingUndefined);
-```
-
-> _**Note:** I've renamed `undefined` to `somethingUndefined` for the variable name in the code example to avoid potential confusion with the global `undefined` property, though `let undefined;` is syntactically valid in older JS. Using a more descriptive name is generally good practice._
-
----
 
 ## ▶️ How to Run
 
