@@ -1,5 +1,7 @@
 ---
+
 # JavaScript Primitive Data Types: An Overview (NNSSBBU)
+
 ---
 
 ## 📝 Description
@@ -7,9 +9,8 @@
 This repository provides a concise example demonstrating several **primitive data types** in JavaScript. It introduces the "NNSSBBU" mnemonic to help remember the core primitive types and utilizes the `typeof` operator to inspect their types at runtime.
 
 The example highlights:
-
-- Declaring variables with **String**, **Number**, **Boolean**, and **Undefined** types.
-- Using the `typeof` operator to log the type of each variable to the console.
+*   Declaring variables with **String**, **Number**, **Boolean**, and **Undefined** types.
+*   Using the `typeof` operator to log the type of each variable to the console.
 
 It also touches upon the distinction between JavaScript's handling of single characters (as `String`) compared to languages like C++ where `char` is a distinct type.
 
@@ -32,19 +33,17 @@ U - Undefined
 There's also "character" data type. For example - 'a', but, here in javascript, we store this single character as string. Though this single character has a different data type which is called "char" in C++
 */
 
-//! Example Code :
-let name = "John"; //! String
-let age = 30; //! Number
-let isStudent = true; //! Boolean
+//! Example Code : 
+let name = "John";      //! String
+let age = 30;           //! Number
+let isStudent = true;   //! Boolean
 let somethingUndefined; //! Undefined (better variable name for clarity)
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isStudent);
-console.log(typeof somethingUndefined);
+console.log( typeof name );
+console.log( typeof age );
+console.log( typeof isStudent );
+console.log( typeof somethingUndefined );
 ```
-
-> _**Note:** I've renamed `undefined` to `somethingUndefined` for the variable name in the code example to avoid potential confusion with the global `undefined` property, though `let undefined;` is syntactically valid in older JS. Using a more descriptive name is generally good practice._
 
 ---
 
@@ -105,55 +104,55 @@ JavaScript has 7 primitive (non-object) data types. A helpful mnemonic to rememb
 
 #### 1. `Number`
 
-- Used for both integer and floating-point numbers.
-- **Example:** `let age = 30;` or `let price = 19.99;`
-- `typeof` result: `"number"`
+*   Used for both integer and floating-point numbers.
+*   **Example:** `let age = 30;` or `let price = 19.99;`
+*   `typeof` result: `"number"`
 
 #### 2. `String`
 
-- Used for text data, enclosed in single quotes (`''`), double quotes (`""`), or backticks (`` ` `` for template literals).
-- **Example:** `let name = "John";` or `let message = 'Hello!';`
-- **Character Handling:** Unlike languages like C++ with a distinct `char` type, JavaScript stores single characters (e.g., `'a'`) as strings of length 1.
-- `typeof` result: `"string"`
+*   Used for text data, enclosed in single quotes (`''`), double quotes (`""`), or backticks (`` ` `` for template literals).
+*   **Example:** `let name = "John";` or `let message = 'Hello!';`
+*   **Character Handling:** Unlike languages like C++ with a distinct `char` type, JavaScript stores single characters (e.g., `'a'`) as strings of length 1.
+*   `typeof` result: `"string"`
 
 #### 3. `Boolean`
 
-- Represents a logical entity with two possible values: `true` or `false`.
-- **Example:** `let isStudent = true;` or `let hasAccess = false;`
-- `typeof` result: `"boolean"`
+*   Represents a logical entity with two possible values: `true` or `false`.
+*   **Example:** `let isStudent = true;` or `let hasAccess = false;`
+*   `typeof` result: `"boolean"`
 
 #### 4. `Undefined`
 
-- Indicates that a variable has been declared but **has not yet been assigned a value**. It's also the default return value for functions that don't explicitly return anything.
-- **Example:** `let somethingUndefined;` (its value is implicitly `undefined`)
-- `typeof` result: `"undefined"`
+*   Indicates that a variable has been declared but **has not yet been assigned a value**. It's also the default return value for functions that don't explicitly return anything.
+*   **Example:** `let somethingUndefined;` (its value is implicitly `undefined`)
+*   `typeof` result: `"undefined"`
 
 #### 5. `Null`
 
-- Represents the **intentional absence of any object value**. It's a primitive value.
-- **Example:** `let emptyValue = null;`
-- `typeof` result: `"object"` (⚠️ **Historical Bug/Quirk**: `typeof null` returns `"object"`. This is a long-standing bug in JavaScript that cannot be fixed without breaking existing code.)
+*   Represents the **intentional absence of any object value**. It's a primitive value.
+*   **Example:** `let emptyValue = null;`
+*   `typeof` result: `"object"` (⚠️ **Historical Bug/Quirk**: `typeof null` returns `"object"`. This is a long-standing bug in JavaScript that cannot be fixed without breaking existing code.)
 
 #### 6. `Symbol` (ES6/ES2015 Feature)
 
-- Represents a unique identifier. Symbols are guaranteed to be unique and immutable.
-- Often used to add unique property keys to an object that won't clash with keys from other code.
-- **Example:** `const id = Symbol('myId');`
-- `typeof` result: `"symbol"`
+*   Represents a unique identifier. Symbols are guaranteed to be unique and immutable.
+*   Often used to add unique property keys to an object that won't clash with keys from other code.
+*   **Example:** `const id = Symbol('myId');`
+*   `typeof` result: `"symbol"`
 
 #### 7. `BigInt` (ES2020 Feature)
 
-- Represents whole numbers larger than `2^53 - 1` (the maximum number that `Number` can reliably represent).
-- BigInts are created by appending `n` to an integer literal.
-- **Example:** `const bigNumber = 1234567890123456789012345678901234567890n;`
-- `typeof` result: `"bigint"`
+*   Represents whole numbers larger than `2^53 - 1` (the maximum number that `Number` can reliably represent).
+*   BigInts are created by appending `n` to an integer literal.
+*   **Example:** `const bigNumber = 1234567890123456789012345678901234567890n;`
+*   `typeof` result: `"bigint"`
 
 ---
 
 ### The `typeof` Operator
 
-- The `typeof` operator returns a string indicating the type of the unevaluated operand.
-- It's a useful tool for debugging and type checking in JavaScript.
-- **Usage:** `typeof variableName` or `typeof value`
+*   The `typeof` operator returns a string indicating the type of the unevaluated operand.
+*   It's a useful tool for debugging and type checking in JavaScript.
+*   **Usage:** `typeof variableName` or `typeof value`
 
 ---
