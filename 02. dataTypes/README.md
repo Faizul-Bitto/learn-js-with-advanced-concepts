@@ -1,5 +1,3 @@
-Understood! Here's the documentation for your JavaScript data types example, formatted in a Notion-inspired style.
-
 ---
 
 # JavaScript Primitive Data Types: An Overview (NNSSBBU)
