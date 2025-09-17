@@ -1,4 +1,4 @@
-let name; //! variable declaration with 'let' keyword
+let name; //! variable declaration
 name = "John"; //! variable initialization
 const name2 = "Jane"; //! variable declaration with 'const' keyword. For 'const', variable initialization is mandatory. Cannot declare and then initialize
 
